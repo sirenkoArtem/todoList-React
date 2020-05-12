@@ -1,13 +1,23 @@
-@import '.././mixins/flexbox';
+@import '../../mixins/flexbox';
 
 .todo-list-item{
   @include flex-box(row, space-between, center);
   padding: .25em .75em;
   margin-bottom: .25em;
   font-weight: 600;
+  cursor: pointer;
+
+  .important{
+    font-weight: 800;
+    color: steelblue;
+  }
 
   .btn{
     margin: 3px;
     width: 35px;
   }
+}
+
+.done {
+  text-decoration: line-through;
 }
