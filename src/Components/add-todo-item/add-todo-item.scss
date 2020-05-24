@@ -1,0 +1,5 @@
+@import "../../mixins/flexbox";
+
+.add-todo-item{
+  @include flex-box(row, space-between, flex-end);
+}
